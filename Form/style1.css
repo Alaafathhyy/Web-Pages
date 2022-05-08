@@ -1,0 +1,41 @@
+
+form {
+    background-color:  rgba(112, 179, 170, 0.452);;
+    border: brown;
+    
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+input[type=text],
+select,
+textarea,label,legend{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-style: italic;
+
+
+}
+legend{
+    width: 70px;
+    padding: 2px;
+    margin-left: calc(50% - 35px - 2px);
+    background-color:blanchedalmond;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+
+
+}

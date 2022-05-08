@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <title>Home Services Application</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+    <form action="index.php" method="get" target="_blank" onsubmit="checkInputs(event);">
+
+        <fieldset>
+            <legend>Applicant details</legend>
+            
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+
+
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone" ​​ pattern="[0-9]{11}"><br><br>
+
+            <label for ="address">Address:</label>
+            <textarea rows="2" cols="50" id="address" req>
+               enter the address
+             </textarea>
+            <br><br>
+
+
+        </fieldset>
+
+        <br><br>
+
+
+        <fieldset>
+            <legend>Service Details</legend>
+            <label for="Serviceday">Service Day:</label>
+            <input type="date" id="Serviceday" name="Serviceday"><br><br>
+            <label for="Service">Choose your Service from the list:</label>
+            <input list="Services" name="Service" id="Service">
+            <datalist id="Services">
+                <option value="House cleaning">
+                <option value="Nursing">
+                <option value="baby setter">
+                <option value="Garden Services">
+                <option value="Handyman">
+                <option value="Interior decorator">
+            </datalist>
+
+            <br><br>
+                <label >Service Detials:</label>
+                <br><br>
+            <textarea rows="5" cols="60" id="description">
+            Please specify the service that you want
+             </textarea>
+            <br><br>
+
+            <fieldset>
+                <legend>Proivder Gender </legend>
+                <input class="gender" type="checkbox" id="man" value="man" />
+                <label for='man'>Men</label>
+                <br><br>
+
+
+                <input class="gender" type="checkbox" id="woman" value="Woman" />
+                <label for='woman'>Women</label>
+                <br><br>
+
+
+                <input class="gender"  type="checkbox" id="anyone" value="anyone" />
+                <label for='anyone'>anyone</label>
+            </fieldset>
+
+            <br><br>
+
+
+            <label for="Durations">Choose the max Duration you want :</label>
+
+            <select name="Durations" id="Durations">
+                <option value="1">less than hour</option>
+                <option value="2">2 hours</option>
+                <option value="3">3 hours</option>
+                <option value="4">4 hours</option>
+                <option value="5">free along the day</option>
+            </select>
+
+        </fieldset>
+
+        <input type="submit" value="Submit" >
+
+    </form>
+
+
+</body>
+<script src="sccript1.js"></script>
+</html>
